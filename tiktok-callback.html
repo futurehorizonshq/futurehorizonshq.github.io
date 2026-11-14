@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Connecting… · Future Horizons</title>
+<style>body{margin:0;background:#0a0d1f;color:#e8edf7;font:16px system-ui,sans-serif;display:grid;place-items:center;height:100vh;text-align:center}img{width:90px;border-radius:50%}</style></head>
+<body><div><img src="/logo.png" alt=""><h2>Future Horizons Studio</h2><p id="m">Finishing TikTok connection…</p></div>
+<script>
+// Hands the one-time TikTok login code to Future Horizons Studio running on the owner's own computer.
+var q=location.search;
+if(q.indexOf('code=')>-1||q.indexOf('error=')>-1){location.replace('http://127.0.0.1:8766/tiktok/callback'+q);}
+else{document.getElementById('m').textContent='Nothing to do here.';}
+</script></body></html>
